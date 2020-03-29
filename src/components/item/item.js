@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Item = props => {
   const {
@@ -27,6 +28,15 @@ const Item = props => {
       </div>
     </div>
   );
+};
+
+Item.propTypes = {
+  url: PropTypes.string,
+  MainImage: PropTypes.string,
+  title: PropTypes.string,
+  currency_code: PropTypes.string,
+  price: PropTypes.string,
+  quantity: PropTypes.number
 };
 
 export default Item;
